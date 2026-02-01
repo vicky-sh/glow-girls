@@ -1,0 +1,6 @@
+/* Note: @use is not supported in plain CSS. Consider using SCSS or alternative styling. */
+
+:root {
+  --mat-snack-bar-button-color: orange;
+  --mat-snack-bar-container-color: red;
+}

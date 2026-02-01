@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "github-pages-build": "ng b --configuration production --output-path docs --base-href /glow-girls/"
+    "github-pages-build": "ng b --configuration production --output-path docs --base-href https://vicky-sh/github.io/glow-girls/"
   },
   "prettier": {
     "printWidth": 100,

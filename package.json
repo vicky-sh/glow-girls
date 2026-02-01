@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github-pages-build": "ng b --configuration production --output-path docs --base-href /glow-girls/"
   },
   "prettier": {
     "printWidth": 100,

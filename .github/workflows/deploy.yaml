@@ -37,6 +37,12 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Print npm debug log (if failed)
+        if: failure()
+        run: |
+          ls -la /home/runner/.npm/_logs
+          cat /home/runner/.npm/_logs/*debug-0.log
+
       - name: Build
         run: npx ng build --base-href /glow-girls/
 

@@ -28,6 +28,12 @@ jobs:
           node-version: 22
           cache: 'npm'
 
+      - name: Use npm 11.6.2
+        run: npm i -g npm@11.6.2
+
+      - name: Show Node & npm versions
+        run: node -v && npm -v
+
       - name: Install Dependencies
         run: npm ci
 

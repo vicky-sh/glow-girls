@@ -16,10 +16,6 @@ export const appConfig: ApplicationConfig = {
       routes,
       withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
     ),
-    {
-      provide: LocationStrategy,
-      useClass: HashLocationStrategy, // <-- hash routing
-    },
     provideClientHydration(withEventReplay()),
   ],
 };
